@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: azure;
+    margin: 0;
+    font-family: 'Gill Sans';
+    color: darkslategrey;
+}
+
+header {
+    padding: 24px;
+    background-color: aquamarine;
+    color: rgb(28, 53, 53);
+    border: 4px solid rgb(42, 101, 103);
+}
+
+nav a {
+    color: rgb(42, 101, 103);
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+
+
+main {
+    max-width: 900px;
+    margin: 32px;
+    padding: 0 24px;
+}
+
+section {
+    margin-bottom: 32px;
+}
+
+article {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: lightcoral;
+    color: darkolivegreen;
+}
+
+.destaque {
+    color: antiquewhite;
+    font-weight: bold;
+}
+
+.lista-cursos {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+}
+
+.curso {
+    flex: 1;
+    border-radius: 100px;
+    padding: 24px;
+    text-align: center;
+}
+
+@media (max-width: 400px) {
+    .lista-cursos {
+       flex-direction: column;
+    }
+
+    .curso {
+        padding: 10px;
+    }
+}
+

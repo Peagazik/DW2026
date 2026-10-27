@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+  --color-marinho-50: #f2f5f9;
+  --color-marinho-100: #e3e9f1;
+  --color-marinho-200: #c6d2e2;
+  --color-marinho-400: #5b7ca6;
+  --color-marinho-500: #3d6fa8;
+  --color-marinho-600: #2b5a8c;
+  --color-marinho-700: #1f4572;
+  --color-marinho-800: #15304f;
+  --color-marinho-900: #0e2238;
+
+  --color-borda: #e1e5ea;
+  --color-fundo: #f6f7f9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-fundo);
+  color: var(--color-marinho-900);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Realce de foco único para toda a aplicação, mantendo a navegação por teclado visível. */
+:focus-visible {
+  outline: 2px solid var(--color-marinho-700);
+  outline-offset: 2px;
+  border-radius: 2px;
+}

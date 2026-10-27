@@ -37,7 +37,7 @@ informação é inventada.
 
 ## Como executar
 
-Requer Node.js 20.19 ou superior.
+Requer Node.js 20.19 ou superior (o Vite 8 não roda em versões anteriores).
 
 ```bash
 npm install
@@ -142,18 +142,17 @@ listadas apenas as que não têm `dataFim`, ou seja, as participações em andam
 O arquivo `vercel.json` redireciona todas as rotas para `index.html`, o que é necessário
 para que `/deputados/:id` e `/favoritos` funcionem ao serem acessados diretamente.
 
-1. Enviar o projeto para o GitHub em `seuNome/Atividades/sistema_deputados`.
-2. Importar o repositório na Vercel (preset Vite, build `npm run build`, saída `dist`).
-3. Não há variáveis de ambiente: a API é pública.
+O projeto está publicado na Vercel, com o Root Directory apontando para esta pasta e o
+preset Vite. Não há variáveis de ambiente, já que a API da Câmara é pública.
 
-**URL pública:** _(preencher após o deploy)_
+**URL pública:** https://dw2026-sistemadeputados.vercel.app
 
 ## Capturas de tela
 
 **Listagem e filtros**
 
-_(inserir print da página inicial)_
+![Tela de listagem de deputados, com a busca por nome e os filtros de partido e UF](docs/listagem.png)
 
 **Perfil do deputado**
 
-_(inserir print da página de detalhes)_
+![Página de detalhes de um deputado, com dados pessoais, gabinete e canais oficiais](docs/detalhes.png)
